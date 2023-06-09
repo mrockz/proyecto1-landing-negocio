@@ -1,0 +1,144 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&family=Tsukimi+Rounded&display=swap');
+
+* { 
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+
+header{
+    display: flex;
+    background-color: rgb(189, 189, 189) !important;
+    justify-content: space-between;
+    padding: 30px;
+    min-height: 60px;
+    min-width: 60px;
+    align-items: center;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav a{
+    font-weight: bold;
+    padding-right: 15px;
+}
+nav a:hover{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    align-items: center;  
+}
+
+
+header img{
+    width: 80px;
+    height: 60px;
+}
+img {
+    width: 80px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+}
+
+
+
+main{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 30vh;
+    background: linear-gradient(rgb(137, 136, 136), #00bfff), url(/imagenes/imagen-jumbotron.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media (max-width: 610px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 340px){
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+main {
+    margin: 80px;
+
+   
+  
+    
+
+
+}
+
+section {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+
+}
+
+article {
+    max-width: 270px;
+    
+   
+}
+
+article h6 {
+    font-size: 16px;
+}
+
+article img {
+
+width: 270px;
+height: 270px;
+border-radius: 5%;
+object-fit: cover;
+}
+
+article .info {
+display: flex;
+justify-content: space-between;
+ 
+}
+
+article .info {
+color:#00bfff;
+font-weight: 900;
+
+}
+ 
+article .descripcion {
+    color:gray
+}
+
+article .tipo {
+    color: gray;
+    margin-top: 2px;
+
+}
+
+article .precio {
+    color: gray;
+    margin-top: 2px;
+
+}
+
+
